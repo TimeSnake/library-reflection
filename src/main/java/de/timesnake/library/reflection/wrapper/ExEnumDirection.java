@@ -1,8 +1,10 @@
 package de.timesnake.library.reflection.wrapper;
 
+import de.timesnake.library.reflection.NmsReflection;
 import net.minecraft.core.BaseBlockPosition;
 import net.minecraft.core.EnumDirection;
 
+@NmsReflection
 public enum ExEnumDirection {
 
     DOWN(EnumDirection.a), UP(EnumDirection.b), NORTH(EnumDirection.c), SOUTH(EnumDirection.d), WEST(EnumDirection.e), EAST(EnumDirection.f);

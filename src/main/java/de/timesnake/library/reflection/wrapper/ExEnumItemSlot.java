@@ -1,8 +1,10 @@
 package de.timesnake.library.reflection.wrapper;
 
+import de.timesnake.library.reflection.NmsReflection;
 import net.minecraft.world.entity.EnumItemSlot;
 import org.bukkit.inventory.EquipmentSlot;
 
+@NmsReflection
 public enum ExEnumItemSlot {
 
     MAIN_HAND(EnumItemSlot.a),

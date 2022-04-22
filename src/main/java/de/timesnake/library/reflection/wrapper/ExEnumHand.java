@@ -1,7 +1,9 @@
 package de.timesnake.library.reflection.wrapper;
 
+import de.timesnake.library.reflection.NmsReflection;
 import net.minecraft.world.EnumHand;
 
+@NmsReflection
 public enum ExEnumHand {
 
     MAIN_HAND(EnumHand.a), OFF_HAND(EnumHand.b);

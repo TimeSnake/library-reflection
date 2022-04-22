@@ -1,8 +1,10 @@
 package de.timesnake.library.reflection.wrapper;
 
+import de.timesnake.library.reflection.NmsReflection;
 import net.minecraft.core.BaseBlockPosition;
 import net.minecraft.core.BlockPosition;
 
+@NmsReflection
 public class ExBlockPosition extends ExBaseBlockPosition {
 
     public ExBlockPosition(BlockPosition block) {

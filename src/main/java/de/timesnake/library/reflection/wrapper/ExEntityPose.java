@@ -1,7 +1,9 @@
 package de.timesnake.library.reflection.wrapper;
 
+import de.timesnake.library.reflection.NmsReflection;
 import net.minecraft.world.entity.EntityPose;
 
+@NmsReflection
 public enum ExEntityPose {
 
     STANDING(EntityPose.a),
