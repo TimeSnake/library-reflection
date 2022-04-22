@@ -7,15 +7,9 @@
     <groupId>de.timesnake</groupId>
     <artifactId>library-reflection</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <dependencies>
-        <!--Paper API-->
-        <dependency>
-            <groupId>io.papermc.paper</groupId>
-            <artifactId>paper-api</artifactId>
-            <version>1.18.2-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
 
         <!--Spigot API-->
         <dependency>
