@@ -134,7 +134,7 @@ public class RefUtil {
     @SuppressWarnings("rawtypes")
     protected static Object invokeMethod(Class<?> clazz, Object handle, String methodName, Class[] parameterClasses, Object... args) {
         Optional<Method> methodOptional = getMethod(clazz, methodName, parameterClasses);
-        if (!methodOptional.isPresent()) {
+        if (methodOptional.isEmpty()) {
             if (clazz.equals(Object.class)) {
                 return null;
             }
