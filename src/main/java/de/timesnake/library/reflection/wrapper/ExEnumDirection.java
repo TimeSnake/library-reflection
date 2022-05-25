@@ -7,7 +7,12 @@ import net.minecraft.core.EnumDirection;
 @NmsReflection
 public enum ExEnumDirection {
 
-    DOWN(EnumDirection.a), UP(EnumDirection.b), NORTH(EnumDirection.c), SOUTH(EnumDirection.d), WEST(EnumDirection.e), EAST(EnumDirection.f);
+    DOWN(EnumDirection.a),
+    UP(EnumDirection.b),
+    NORTH(EnumDirection.c),
+    SOUTH(EnumDirection.d),
+    WEST(EnumDirection.e),
+    EAST(EnumDirection.f);
 
     private final EnumDirection direction;
 

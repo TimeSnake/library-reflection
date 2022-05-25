@@ -25,11 +25,13 @@ public class ExBlockPosition extends ExBaseBlockPosition {
     }
 
     public BlockPosition shift(ExEnumDirection direction) {
-        return new BlockPosition(this.getX() + direction.getAdjacentX(), this.getY() + direction.getAdjacentY(), this.getZ() + direction.getAdjacentZ());
+        return new BlockPosition(this.getX() + direction.getAdjacentX(), this.getY() + direction.getAdjacentY(),
+                this.getZ() + direction.getAdjacentZ());
     }
 
     public BlockPosition shift(ExEnumDirection direction, int i) {
-        return i == 0 ? this.getNMS() : new BlockPosition(this.getX() + direction.getAdjacentX() * i, this.getY() + direction.getAdjacentY() * i, this.getZ() + direction.getAdjacentZ() * i);
+        return i == 0 ? this.getNMS() : new BlockPosition(this.getX() + direction.getAdjacentX() * i,
+                this.getY() + direction.getAdjacentY() * i, this.getZ() + direction.getAdjacentZ() * i);
     }
 
     public BlockPosition up() {
