@@ -25,7 +25,7 @@ public enum ExEnumDirection {
     }
 
     public BaseBlockPosition getBaseBlockPosition() {
-        return this.direction.p();
+        return this.direction.q();
     }
 
     public ExBaseBlockPosition getExBaseBlockPosition() {
