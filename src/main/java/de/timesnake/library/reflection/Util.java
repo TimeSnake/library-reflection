@@ -1,5 +1,5 @@
 /*
- * library-reflection.main
+ * workspace.library-reflection.main
  * Copyright (C) 2022 timesnake
  *
  * This program is free software; you can redistribute it and/or
@@ -18,24 +18,14 @@
 
 package de.timesnake.library.reflection;
 
-import org.bukkit.Bukkit;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Optional;
 
-public class RefUtil {
-
-    protected static final String SERVER_VERSION;
-
-    static {
-        String name = Bukkit.getServer().getClass().getName();
-        name = name.substring(name.indexOf("craftbukkit.") + "craftbukkit.".length());
-        name = name.substring(0, name.indexOf("."));
-        SERVER_VERSION = name;
-    }
+@Deprecated
+public class Util {
 
     public static Object getInstanceField(Object instance, String fieldName) {
         Field field = null;
@@ -150,8 +140,7 @@ public class RefUtil {
     }
 
     @SuppressWarnings("rawtypes")
-    protected static Object invokeMethod(Class<?> clazz, Object handle, String methodName, Class[] parameterClasses,
-                                         Object... args) {
+    protected static Object invokeMethod(Class<?> clazz, Object handle, String methodName, Class[] parameterClasses, Object... args) {
         Optional<Method> methodOptional = getMethod(clazz, methodName, parameterClasses);
         if (methodOptional.isEmpty()) {
             if (clazz.equals(Object.class)) {
