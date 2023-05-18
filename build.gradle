@@ -1,5 +1,11 @@
+group = project.group
+version = '1.1-SNAPSHOT'
+archivesBaseName = 'library-reflection'
+var projectId = 39
+
 repositories {
   mavenLocal()
+  mavenCentral()
   maven {
     url = uri 'https://repo.maven.apache.org/maven2/'
   }
@@ -10,6 +16,14 @@ dependencies {
   compileOnly project.spigot
 }
 
-group = project.group
-version = '1.1-SNAPSHOT'
-archivesBaseName = 'library-reflection'
+publishing {
+  repositories {
+    maven {
+      url getDeployUrl(projectId)
+      credentials {
+        username = deploy_token_name
+        password = deploy_token_key
+      }
+    }
+  }
+}
