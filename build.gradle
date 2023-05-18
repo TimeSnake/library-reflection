@@ -1,13 +1,13 @@
 repositories {
-    mavenLocal()
-    maven {
-        url = uri 'https://repo.maven.apache.org/maven2/'
-    }
+  mavenLocal()
+  maven {
+    url = uri 'https://repo.maven.apache.org/maven2/'
+  }
 }
 
 dependencies {
-    compileOnly project.spigot_api
-    compileOnly project.spigot
+  compileOnly project.spigot_api
+  compileOnly project.spigot
 }
 
 group = project.group
